@@ -1,0 +1,4 @@
+proposed workflow:
+Update the version number in package.json, either manually or using npm version (minor, major, etc)
+Push that commit
+
