@@ -1,4 +1,10 @@
 proposed workflow:
-Update the version number in package.json, either manually or using npm version (minor, major, etc)
-Push that commit
+Update the version number in package.json,  using npm version (minor, major, etc)
+this will create a commit and also a tag
+Push that commit, use git push --tags
 
+
+On the Jenkins side - for publishing
+Jenkins clones the repo
+Jenkins runs npm publish --from-git
+Package is published !!
