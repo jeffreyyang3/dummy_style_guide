@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js",
+    "post-install-dev": "cd .. && npm link && cd - && npm link dummy_style_guide",
+    "post-install-prod": "npm install dummy_style_guide@$npm_package_styleGuideVersion",
+    "echo": "echo $npm_package_styleGuideVersion"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dummy_style_guide": "^3.0.0"
-  }
+    "is-even": "^1.0.0"
+  },
+  "styleGuideVersion": "3.0.0"
 }
